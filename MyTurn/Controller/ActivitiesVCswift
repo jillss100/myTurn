@@ -1,6 +1,6 @@
 //
-//  FirstViewController.swift
-//  My Turn
+//  ActivitiesVC.swift
+//  MyTurn
 //
 //  Created by Jill Uhl on 1/7/19.
 //  Copyright © 2019 Kidlatta. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ActivitiesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

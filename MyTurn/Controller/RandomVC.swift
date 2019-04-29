@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  RandomVC.swift
 //  My Turn
 //
 //  Created by Jill Uhl on 1/7/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class RandomVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
