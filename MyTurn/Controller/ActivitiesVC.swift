@@ -30,7 +30,6 @@ class ActivitiesVC: UIViewController, UICollectionViewDelegate, UICollectionView
             layout.itemSize = CGSize(width: width, height: width)
             layout.minimumLineSpacing = 12
         }
-        
         activitiesCollectionView.reloadData()
     }
 
@@ -38,7 +37,6 @@ class ActivitiesVC: UIViewController, UICollectionViewDelegate, UICollectionView
     @IBAction func unwindToVC(segue: UIStoryboardSegue) {
 
         segue.destination.dismiss(animated: false, completion: nil)
-
     }
 
     
@@ -79,6 +77,10 @@ class ActivitiesVC: UIViewController, UICollectionViewDelegate, UICollectionView
             }
             cell.actUserName.text = cell.currentUser?.name
             cell.activityImage.image = cell.currentUser?.photo as? UIImage
+            
+        } else {
+            cell.actUserName.text = ""
+            cell.activityImage.image = nil
         }
         return cell
     }

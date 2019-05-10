@@ -17,7 +17,7 @@ class ParticipantsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var activityEdit: Activity?
     var controller: NSFetchedResultsController<User>!
     
-    var participantsSelected: Bool?
+    var participantsSelected: [NSObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,16 +38,14 @@ class ParticipantsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBAction func saveParticipantsBtn(_ sender: Any) {
         
-        if participantsSelected == true {
+        if (activityEdit?.users!.count)! > 0 {
             adCoreData.saveContext()
             performSegue(withIdentifier: "unwindToActivities", sender: nil)
         } else {
-        let dialogMessage = UIAlertController(title: "No Participants", message: "Please select participants for this activity", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default, handler: { (ACTION) -> Void in
-            
-            dialogMessage.dismiss(animated: true, completion: nil)
-            })
+        let dialogMessage = UIAlertController(title: "No Participants Selected", message: "Please select participants for this activity.", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
             dialogMessage.addAction(ok)
+        self.present(dialogMessage, animated: true, completion: nil)
         }
     }
     
@@ -90,11 +88,6 @@ class ParticipantsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.activityEdit?.removeFromUsers(user)
                 }
             }
-        }
-        if activityEdit?.users?.allObjects == nil {
-            participantsSelected = false
-        } else {
-            participantsSelected = true
         }
         
         return cell
