@@ -8,23 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		35797FCF74E5976EC50AB578 /* Pods_MyTurn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E7CADEA1671547E0EAC8F8 /* Pods_MyTurn.framework */; };
+		A829347F2295C40F0066A48A /* Assets 14-26-56-666.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A829347C2295BB860066A48A /* Assets 14-26-56-666.xcassets */; };
+		A82934812295C8290066A48A /* button_click_003.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A82934802295C8280066A48A /* button_click_003.mp3 */; };
+		A82934832295C8CA0066A48A /* button_click_012.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A82934822295C8C90066A48A /* button_click_012.mp3 */; };
+		A82934892295D0640066A48A /* drumRoll2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A82934882295D0500066A48A /* drumRoll2.m4a */; };
+		A829348B229EF27C0066A48A /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829348A229EF27C0066A48A /* CircleButton.swift */; };
+		A84C4E2522E8EA590074F5FE /* Local Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84C4E2422E8EA580074F5FE /* Local Notification.swift */; };
 		A886C70F225BCA85009D58C9 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886C70E225BCA85009D58C9 /* RoundedCorners.swift */; };
 		A886C711225E60A6009D58C9 /* AddActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886C710225E60A6009D58C9 /* AddActivityVC.swift */; };
 		A886C713225FAED7009D58C9 /* EditActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886C712225FAED7009D58C9 /* EditActivityCell.swift */; };
-		A886C715225FB2B9009D58C9 /* EditActivityTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886C714225FB2B8009D58C9 /* EditActivityTwoVC.swift */; };
+		A88C6CDA23154D3D00EED18D /* bell_slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A88C6CD923154D3C00EED18D /* bell_slow.mp3 */; };
+		A88C98B0233BF0C200240F31 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C98AF233BF0C200240F31 /* RoundedCornerView.swift */; };
 		A8B1EC7021E3E43D00E509B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1EC6F21E3E43D00E509B8 /* AppDelegate.swift */; };
 		A8B1EC7421E3E43D00E509B8 /* RandomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1EC7321E3E43D00E509B8 /* RandomVC.swift */; };
 		A8B1EC7721E3E43D00E509B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B1EC7521E3E43D00E509B8 /* Main.storyboard */; };
-		A8B1EC7921E3E44100E509B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B1EC7821E3E44100E509B8 /* Assets.xcassets */; };
 		A8B1EC7C21E3E44100E509B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B1EC7A21E3E44100E509B8 /* LaunchScreen.storyboard */; };
 		A8B1EC8521E3E98500E509B8 /* CoreDataMyTurn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8B1EC8321E3E98500E509B8 /* CoreDataMyTurn.xcdatamodeld */; };
 		A8B1EC8721E3EA7D00E509B8 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1EC8621E3EA7D00E509B8 /* UsersVC.swift */; };
 		A8B1EC8B21E3EE2200E509B8 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1EC8A21E3EE2200E509B8 /* UserCell.swift */; };
 		A8B1EC8D21E3F2DF00E509B8 /* EditUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1EC8C21E3F2DF00E509B8 /* EditUserVC.swift */; };
+		A8C3D4F72329634900658904 /* bell_long2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8C3D4F62329634800658904 /* bell_long2.wav */; };
+		A8C3D4F92329690700658904 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C3D4F82329690700658904 /* PopUpVC.swift */; };
 		A8D07FB321EBDAC50033BCA7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FB221EBDAC50033BCA7 /* CircleImage.swift */; };
 		A8D07FB521EE662C0033BCA7 /* ActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FB421EE662C0033BCA7 /* ActivitiesVC.swift */; };
 		A8D07FB721EE668A0033BCA7 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FB621EE668A0033BCA7 /* ActivityCell.swift */; };
-		A8D07FB921EFB6340033BCA7 /* EditActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FB821EFB6340033BCA7 /* EditActivityVC.swift */; };
 		A8D07FDA21F8FB5F0033BCA7 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FD621F8FB5F0033BCA7 /* User+CoreDataClass.swift */; };
 		A8D07FDB21F8FB5F0033BCA7 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FD721F8FB5F0033BCA7 /* User+CoreDataProperties.swift */; };
 		A8D07FDC21F8FB5F0033BCA7 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D07FD821F8FB5F0033BCA7 /* Activity+CoreDataClass.swift */; };
@@ -39,26 +46,33 @@
 		65E7CADEA1671547E0EAC8F8 /* Pods_MyTurn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTurn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83ED83100292B68F46D7EA09 /* Pods-MyTurn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTurn.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTurn/Pods-MyTurn.release.xcconfig"; sourceTree = "<group>"; };
 		A59E76BA3364ED8CD80EC9B1 /* Pods-MyTurn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTurn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTurn/Pods-MyTurn.debug.xcconfig"; sourceTree = "<group>"; };
+		A829347C2295BB860066A48A /* Assets 14-26-56-666.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 14-26-56-666.xcassets"; sourceTree = "<group>"; };
+		A82934802295C8280066A48A /* button_click_003.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button_click_003.mp3; sourceTree = "<group>"; };
+		A82934822295C8C90066A48A /* button_click_012.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button_click_012.mp3; sourceTree = "<group>"; };
+		A82934882295D0500066A48A /* drumRoll2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = drumRoll2.m4a; sourceTree = "<group>"; };
+		A829348A229EF27C0066A48A /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		A84C4E2422E8EA580074F5FE /* Local Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Local Notification.swift"; path = "MyTurn/Local Notification.swift"; sourceTree = SOURCE_ROOT; };
 		A886C70E225BCA85009D58C9 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		A886C710225E60A6009D58C9 /* AddActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityVC.swift; sourceTree = "<group>"; };
 		A886C712225FAED7009D58C9 /* EditActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityCell.swift; sourceTree = "<group>"; };
-		A886C714225FB2B8009D58C9 /* EditActivityTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityTwoVC.swift; sourceTree = "<group>"; };
 		A888EBAC21E6779900682D73 /* MyTurn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTurn-Bridging-Header.h"; sourceTree = "<group>"; };
+		A88C6CD923154D3C00EED18D /* bell_slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_slow.mp3; sourceTree = "<group>"; };
+		A88C98AF233BF0C200240F31 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		A8B1EC6C21E3E43D00E509B8 /* MyTurn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTurn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B1EC6F21E3E43D00E509B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B1EC7321E3E43D00E509B8 /* RandomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomVC.swift; sourceTree = "<group>"; };
 		A8B1EC7621E3E43D00E509B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A8B1EC7821E3E44100E509B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B1EC7B21E3E44100E509B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B1EC7D21E3E44100E509B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8B1EC8421E3E98500E509B8 /* CoreDataMyTurn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMyTurn.xcdatamodel; sourceTree = "<group>"; };
 		A8B1EC8621E3EA7D00E509B8 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		A8B1EC8A21E3EE2200E509B8 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A8B1EC8C21E3F2DF00E509B8 /* EditUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserVC.swift; sourceTree = "<group>"; };
+		A8C3D4F62329634800658904 /* bell_long2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bell_long2.wav; sourceTree = "<group>"; };
+		A8C3D4F82329690700658904 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
 		A8D07FB221EBDAC50033BCA7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		A8D07FB421EE662C0033BCA7 /* ActivitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVC.swift; sourceTree = "<group>"; };
 		A8D07FB621EE668A0033BCA7 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
-		A8D07FB821EFB6340033BCA7 /* EditActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityVC.swift; sourceTree = "<group>"; };
 		A8D07FD621F8FB5F0033BCA7 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A8D07FD721F8FB5F0033BCA7 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A8D07FD821F8FB5F0033BCA7 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -101,8 +115,7 @@
 		A888EBAD21E6785800682D73 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A886C714225FB2B8009D58C9 /* EditActivityTwoVC.swift */,
-				A8D07FB821EFB6340033BCA7 /* EditActivityVC.swift */,
+				A8C3D4F82329690700658904 /* PopUpVC.swift */,
 				A886C710225E60A6009D58C9 /* AddActivityVC.swift */,
 				A8DEE4D722207FFC004D1679 /* ParticipantsVC.swift */,
 				A8D07FB421EE662C0033BCA7 /* ActivitiesVC.swift */,
@@ -154,10 +167,16 @@
 				A888EBAD21E6785800682D73 /* Controller */,
 				A888EBAE21E6788000682D73 /* Model */,
 				A8B1EC8321E3E98500E509B8 /* CoreDataMyTurn.xcdatamodeld */,
-				A8B1EC7821E3E44100E509B8 /* Assets.xcassets */,
 				A888EBAC21E6779900682D73 /* MyTurn-Bridging-Header.h */,
 				A8B1EC6F21E3E43D00E509B8 /* AppDelegate.swift */,
+				A829347C2295BB860066A48A /* Assets 14-26-56-666.xcassets */,
 				A8B1EC7A21E3E44100E509B8 /* LaunchScreen.storyboard */,
+				A82934802295C8280066A48A /* button_click_003.mp3 */,
+				A8C3D4F62329634800658904 /* bell_long2.wav */,
+				A82934882295D0500066A48A /* drumRoll2.m4a */,
+				A88C6CD923154D3C00EED18D /* bell_slow.mp3 */,
+				A82934822295C8C90066A48A /* button_click_012.mp3 */,
+				A84C4E2422E8EA580074F5FE /* Local Notification.swift */,
 				A8B1EC7D21E3E44100E509B8 /* Info.plist */,
 			);
 			path = MyTurn;
@@ -167,7 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				A886C70E225BCA85009D58C9 /* RoundedCorners.swift */,
+				A88C98AF233BF0C200240F31 /* RoundedCornerView.swift */,
 				A8D07FB221EBDAC50033BCA7 /* CircleImage.swift */,
+				A829348A229EF27C0066A48A /* CircleButton.swift */,
 			);
 			name = View;
 			path = "New Group";
@@ -207,6 +228,11 @@
 				TargetAttributes = {
 					A8B1EC6B21E3E43D00E509B8 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -233,9 +259,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82934892295D0640066A48A /* drumRoll2.m4a in Resources */,
 				A8B1EC7C21E3E44100E509B8 /* LaunchScreen.storyboard in Resources */,
-				A8B1EC7921E3E44100E509B8 /* Assets.xcassets in Resources */,
+				A8C3D4F72329634900658904 /* bell_long2.wav in Resources */,
+				A82934812295C8290066A48A /* button_click_003.mp3 in Resources */,
 				A8B1EC7721E3E43D00E509B8 /* Main.storyboard in Resources */,
+				A829347F2295C40F0066A48A /* Assets 14-26-56-666.xcassets in Resources */,
+				A82934832295C8CA0066A48A /* button_click_012.mp3 in Resources */,
+				A88C6CDA23154D3D00EED18D /* bell_slow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,15 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A829348B229EF27C0066A48A /* CircleButton.swift in Sources */,
 				A8D07FDD21F8FB5F0033BCA7 /* Activity+CoreDataProperties.swift in Sources */,
 				A8B1EC8721E3EA7D00E509B8 /* UsersVC.swift in Sources */,
 				A8D07FDC21F8FB5F0033BCA7 /* Activity+CoreDataClass.swift in Sources */,
 				A8B1EC7421E3E43D00E509B8 /* RandomVC.swift in Sources */,
-				A886C715225FB2B9009D58C9 /* EditActivityTwoVC.swift in Sources */,
+				A84C4E2522E8EA590074F5FE /* Local Notification.swift in Sources */,
 				A8D07FDB21F8FB5F0033BCA7 /* User+CoreDataProperties.swift in Sources */,
 				A8DEE4D822207FFE004D1679 /* ParticipantsVC.swift in Sources */,
 				A8DEE4DA222080A3004D1679 /* ParticipantsCell.swift in Sources */,
-				A8D07FB921EFB6340033BCA7 /* EditActivityVC.swift in Sources */,
 				A8B1EC8B21E3EE2200E509B8 /* UserCell.swift in Sources */,
 				A886C70F225BCA85009D58C9 /* RoundedCorners.swift in Sources */,
 				A8D07FB321EBDAC50033BCA7 /* CircleImage.swift in Sources */,
@@ -310,7 +341,9 @@
 				A8D07FB721EE668A0033BCA7 /* ActivityCell.swift in Sources */,
 				A8B1EC8D21E3F2DF00E509B8 /* EditUserVC.swift in Sources */,
 				A8D07FDA21F8FB5F0033BCA7 /* User+CoreDataClass.swift in Sources */,
+				A88C98B0233BF0C200240F31 /* RoundedCornerView.swift in Sources */,
 				A886C711225E60A6009D58C9 /* AddActivityVC.swift in Sources */,
+				A8C3D4F92329690700658904 /* PopUpVC.swift in Sources */,
 				A8B1EC7021E3E43D00E509B8 /* AppDelegate.swift in Sources */,
 				A8D07FB521EE662C0033BCA7 /* ActivitiesVC.swift in Sources */,
 			);
@@ -468,7 +501,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Kidlatta.My-Turn";
+				PRODUCT_BUNDLE_IDENTIFIER = Kidlatta.ItsMyTurn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTurn/MyTurn-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -488,7 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Kidlatta.My-Turn";
+				PRODUCT_BUNDLE_IDENTIFIER = Kidlatta.ItsMyTurn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyTurn/MyTurn-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

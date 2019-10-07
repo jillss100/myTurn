@@ -25,20 +25,18 @@ class AddActivityVC: UIViewController, UINavigationControllerDelegate, UITextFie
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        //dismiss textField and don't show button if no text
-        self.activityName.delegate = self
-        if activityName.text!.isEmpty {
-            saveBtnOutlet.isUserInteractionEnabled = false
-        }
+        //dismiss textField and disable button if no text
+        activityName.delegate = self
         
         if activityEdit != nil {
             activityName.text = activityEdit?.name
         }
         
-        //        if let topItem = self.navigationController?.navigationBar.topItem {
-        //
-        //            topItem.backBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
-        //        }
+        if activityName.text!.isEmpty {
+            saveBtnOutlet.isEnabled = false
+            saveBtnOutlet.alpha = 0.5
+        }
+ 
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -48,16 +46,42 @@ class AddActivityVC: UIViewController, UINavigationControllerDelegate, UITextFie
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
+
         let text = (activityName.text! as NSString).replacingCharacters(in: range, with: string)
-        if !text.isEmpty {
-            saveBtnOutlet.isUserInteractionEnabled = true
+
+        if text.isEmpty {
+            saveBtnOutlet.isEnabled = false
+            saveBtnOutlet.alpha = 0.5
         } else {
-            saveBtnOutlet.isUserInteractionEnabled = false
+            saveBtnOutlet.isEnabled = true
+            saveBtnOutlet.alpha = 1.0
         }
         return true
     }
+    
+    @IBAction func cancel(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
 
+    @IBAction func deleteBtn(_ sender: Any) {
+        let dialogMessage = UIAlertController(title: "Delete Activity", message: "Are you sure?", preferredStyle: .alert)
+        
+        let yes = UIAlertAction(title: "Yes", style: .default, handler: { (ACTION) -> Void in
+            if self.activityEdit != nil {
+                context.delete(self.activityEdit!)
+                
+                adCoreData.saveContext()
+            }
+            self.navigationController?.popViewController(animated: true)
+        })
+        let no = UIAlertAction(title: "No", style: .default, handler: { (ACTION) -> Void in
+            dialogMessage.dismiss(animated: true, completion: nil)
+        })
+        dialogMessage.addAction(yes)
+        dialogMessage.addAction(no)
+        present(dialogMessage, animated: true, completion: nil)
+    }
+    
     @IBAction func saveBtn(_ sender: Any) {
     
         //save to core data

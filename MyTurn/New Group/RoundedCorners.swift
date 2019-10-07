@@ -11,7 +11,7 @@ import UIKit
 class RoundedCorners: UIButton {
     
     override func awakeFromNib() {
-        self.layer.cornerRadius = 8.0
+        self.layer.cornerRadius = 6.0
         self.clipsToBounds = true
     }
     

@@ -13,16 +13,12 @@ class ParticipantsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var activityLabel: UILabel!
     @IBOutlet weak var participantTableView: UITableView!
+    @IBOutlet weak var saveButton: RoundedCorners!
     
     var activityEdit: Activity?
     var controller: NSFetchedResultsController<User>!
     
     var participantsSelected: [NSObject] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-   
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -42,7 +38,7 @@ class ParticipantsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             adCoreData.saveContext()
             performSegue(withIdentifier: "unwindToActivities", sender: nil)
         } else {
-        let dialogMessage = UIAlertController(title: "No Participants Selected", message: "Please select participants for this activity.", preferredStyle: .alert)
+        let dialogMessage = UIAlertController(title: "No Selection", message: "Please select Turn Takers for this activity.", preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: nil)
             dialogMessage.addAction(ok)
         self.present(dialogMessage, animated: true, completion: nil)
@@ -69,6 +65,8 @@ class ParticipantsVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = participantTableView.dequeueReusableCell(withIdentifier: "ParticipantsCell", for: indexPath) as! ParticipantsCell
         configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        
+        cell.selectionStyle = .none
         
         let user = controller.object(at: indexPath as IndexPath)
         
